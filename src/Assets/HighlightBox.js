@@ -4,6 +4,7 @@ const HighlightBox =({imgSrc, title, para, price}) => {
         // height:'500px',
         width:'25%',
         padding:'10px',
+        maxWidth: '300px',
 
     }
     const itemStyle = {

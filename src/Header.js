@@ -1,5 +1,8 @@
 import image from './Assets/restauranfood.jpg';
 import BasicButton from './Assets/BasicButton';
+import './App.css';
+
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
     const head = {
@@ -37,6 +40,7 @@ const Header = () => {
     const textArea = {
         display: 'flex',
         flexDirection:'column',
+        width:'35%',
         maxWidth: '400px',
         // alignItems:'left',
         // justifyContent:'center',
@@ -52,10 +56,16 @@ const Header = () => {
         maxHeight: '325px',
         maxWidth: '375px',
     }
-    
+
     const buttonDiv = {
         paddingTop: '15px',
     }
+
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+      navigate('/reserve');
+    };
 
     return (
       <header className="header" style={head}>
@@ -66,7 +76,7 @@ const Header = () => {
                 We are a family owned Mediterranean restaurant, focused on traditional recipes served with modern twist
                 </p>
                 <div style={buttonDiv}>
-                    <BasicButton text="Reserve a Table"/>
+                    <BasicButton text="Reserve a Table" onClick={handleClick}/>
                 </div>
         </div>
 

@@ -1,33 +1,37 @@
 import React from 'react';
 import './App.css';
 
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import Head from './Head.js';
-import Header from './Header.js';
 import Nav from './Nav.js';
-import Highlights from './Highlights.js';
-import Testimonials from './Testimonials.js';
-import About from './About.js'
-import Footer from './Footer.js';
+
+import Home from './Pages/Home.js';
+import Reserve from './Pages/Reservations.js';
+
 
 
 
 function App() {
   return (
-    <React.Fragment>
-      <Head/>
-      <Nav/>
-      <main className='main'>
-        <Header/>
-        <Highlights/>
-        <Testimonials/>
-        <About/>
-        <Footer/>
-      </main>
-      <footer className='footer'>
-
-      </footer>
-    </React.Fragment>
-
+    <Router>
+       <Head/>
+       <section id='nav'>
+          <Nav/>
+      </section>
+       <Routes>
+          <Route exact path="/" element={
+            <Home/>
+          }/>
+          <Route exact path="/reserve" element={
+            <Reserve/>
+          }/>
+       </Routes>
+    </Router>
   );
 }
 

@@ -8,10 +8,10 @@ const styles= {
         fontFamily: 'Karla',
     }
 }
-const BasicButton = ({text,style="std"}) =>{
+const BasicButton = ({text,style="std" ,onClick}) =>{
     return (
         <div>
-            <button type="button" style={styles[style]}>{text}</button>
+            <button type="button" style={styles[style]} onClick={onClick}>{text}</button>
         </div>
     )
 }

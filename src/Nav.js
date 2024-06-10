@@ -51,10 +51,10 @@ const Nav = () => {
             <li>
                 <img src={logo} alt="logo" style={logoStyle}></img>
             </li>
-            <li style = {item}><a href="#home"  style= {a}>Home</a></li>
-            <li style = {item} ><a href="#about" style= {a}>About</a></li>
-            <li style = {item}><a href="#menu" style= {a}>Menu</a></li>
-            <li style = {item}><a href="#reservations" style= {a}>Reservations</a></li>
+            <li style = {item}><a href="/"  style= {a}>Home</a></li>
+            <li style = {item} ><a href="/#about" style= {a}>About</a></li>
+            <li style = {item}><a href="/#menu" style= {a}>Menu</a></li>
+            <li style = {item}><a href="/reserve" style= {a}>Reservations</a></li>
             <li style = {item}><a href="#order" style= {a}>Order Online</a></li>
             <li style = {item}><a href="#login" style= {a}>Login</a></li>
 

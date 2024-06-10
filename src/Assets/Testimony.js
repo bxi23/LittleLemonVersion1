@@ -4,6 +4,7 @@ const boxStyle = {
     border: '2px solid black',
     borderRadius:'15px',
     backgroundColor:'white',
+    maxWidth:'200px',
 }
 
 const userStyle ={

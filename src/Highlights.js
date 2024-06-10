@@ -5,6 +5,7 @@ import HighlightBox from './Assets/HighlightBox';
 import bruchetta from "./Assets/bruchetta.png";
 import greekSalad from "./Assets/greek salad.jpg";
 import lemonDesert from "./Assets/lemon dessert.jpg";
+import './App.css';
 
 const Highlights = () => {
     const headingButton = {

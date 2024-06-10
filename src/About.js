@@ -21,7 +21,8 @@ const About = () => {
         display: 'flex',
         flexDirection:'column',
         // justifyContent:'',
-        maxWidth: '25%',
+        width: '25%',
+        maxWidth:'400px',
     }
 
     const imgStyle ={
@@ -50,6 +51,7 @@ const About = () => {
         justifyContent:'center',
         alignItems:'center',
         width:'45%',
+        maxWidth:'500px',
     }
 
     const h1 = {

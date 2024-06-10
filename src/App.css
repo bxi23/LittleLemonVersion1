@@ -1,3 +1,38 @@
+h1 {
+  /* color: 'yellow';
+  font-Family: 'Marzaki Text';
+  font-Weight: 'medium'; */
+}
+
+/* App.css */
+h2 {
+  /* margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: black;
+  font-family:  'Marzaki Text','Karla', sans-serif;
+  font-weight: bold; */
+}
+
+/* Use this for controlling text sizes on different size devices */
+/* @media (max-width: 700px) {
+  .grid-adjustable-columns {
+    display: grid;
+    grid-auto-flow: row;
+  }
+}
+
+@media (min-width: 701px) {
+  .grid-adjustable-columns {
+    width: min(1000px,75rem);
+    margin: 0 auto;
+    grid-auto-flow: column;
+    gap: 1em;
+  }
+} */
+
+
+
 .App {
   text-align: center;
 }
